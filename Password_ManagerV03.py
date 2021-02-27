@@ -74,19 +74,22 @@ def account_creator(x, y):
 
                 if repeat == 1 and y == confirm_pass:
                     break
-                elif repeat == 1:
-                    while True:
-                        choice = input("Would you like to try again or make another password instead? (Y/N) : ").strip().lower()
-
-                        if choice == "y":
-                            repeat = 0
-                            break
-
-                        elif choice == "n":
-                            repeat += 1
-                            break
-                        else:
-                            print("\nPlease enter Y or N")
+                elif repeat == 1 and y != "":
+                    while True:
+                        print("\nERROR, password entered did not match")
+                        choice = input("1. Try again\n2. Make new password\n3. Exit\n")
+                        if choice == "1":
+                            repeat = 1
+                            break
+                        elif choice == "2":
+                            password_creator_message = "Please create a password that is 8 characters long, has numbers : "
+                            repeat = 0
+                            break
+                        elif choice == "3":
+                            repeat += 1
+                            break
+                        else:
+                            print("\nPlease enter an option between 1-3")
                 
         else:
             while True:
