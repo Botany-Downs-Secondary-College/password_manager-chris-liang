@@ -118,7 +118,7 @@ while True:
         break
     while True:
         try:
-            choice = int(input("Would you like to: \n1. Sign up\n2. Login in\n3. Exit").strip())
+            choice = int(input("Would you like to: \n1. Sign up\n2. Login in\n3. Exit\n").strip())
             if choice <= 3 and choice > 0 and choice != 0:
                 if choice == 1:
                     account, password_holder, logged_in = account_creator(account, password_holder, logged_in)
