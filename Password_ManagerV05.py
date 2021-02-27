@@ -8,7 +8,7 @@ age= ""
 account = ""
 password_holder= ""
 eligblity = False
-
+logged_in = False
 #List for storing account usernames and passwords
 account_details=[]
 account_password_list = []
