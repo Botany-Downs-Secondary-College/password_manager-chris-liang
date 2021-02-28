@@ -130,6 +130,7 @@ while True:
                         print("Logging in...")
                 if choice == 3:
                     print("Exiting Password Manager program")
+                    exit()
                 break
             else:
                 print("\nPlease enter only numbers between 1-3: ")
