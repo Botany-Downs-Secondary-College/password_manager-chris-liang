@@ -201,8 +201,6 @@ while True:
                                                         \n2. Remove Username and Password details\n3. View Usernames and Passwords
                                                         \n4. Exit""".format(pm_account)))
                 if choice == 1:
-                    #account, password_holder, account_details = account_creator(account, password_holder, 1)
-                    #account_details_list = account_details_manager(account, password_holder, 2)
                     print("Adding")
                 elif choice == 2:
                     print("Subtracting")
